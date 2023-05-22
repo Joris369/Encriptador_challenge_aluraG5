@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+body{
+    background-color: #2B1F31;
+    font-family: 'Press Start 2P', cursive;
+    color: #A7D129
+}
+
+header{
+    background-color: #191A19;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+._{
+
+    animation: parpadear 1s infinite;
+}
+
+@keyframes parpadear {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+
+.app{
+    margin: 100px auto;
+    text-align: center;
+    
+}
+
+
+
+.Encriptador{
+    display: inline-block;
+    text-align: center;
+    background-color: #2B1F31;
+}
+
+#textchange{
+    word-wrap: break-word;
+    padding: 5px 0 5px 0;
+}
+
+.textArea{
+    font-family: 'Press Start 2P', cursive;
+    color: #A7D129;
+    display: block;
+    width: 500px;
+    border-radius: 2%;
+    margin: 0 0 20px 0;
+    background-color: #191A19;
+    resize: none;
+    border: none;
+    
+}
+
+.instruccion{
+    padding: 10px;
+}
+
+.btn{
+    box-shadow: 3px 4px 0px 0px #191A19;
+    background-color: #A7D129;
+    display: inline-block;
+	border-radius:15px;
+	border:1px solid #5F8D4E;
+	display:inline-block;
+	cursor:pointer;
+	color: black;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+	padding:7px 7px;
+    margin: 0 10px 10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px gray;
+    transition: box-shadow 0.3s ease;
+
+    
+}
+.btn:hover{
+    box-shadow: 0 0 2px 2px rgb(85, 255, 0);
+}
+
+
+.areaResultado{
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 0 0 0 40px;
+    padding: 7px 7px 7px 7px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 10px;
+    background-color: #191A19;
+    border-radius: 5% 5% 5% 5%;
+    max-width: 400px;
+    max-height: 400px; 
+    overflow-y: auto;
+    
+}
+
+
+/* Footer */
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #191A19;
+    width: 100%;
+    height: 280px;
+}
+
+
+img{
+    padding: 20px;
+    width: 40px;
+    
+}
+
+
+.creditos h1{
+    padding: 10px;
+}
+
+.creditos{
+    
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px; 
+    width: 100%;
+}
+
+/* -- Alerta -- */
+
+.alerta {
+    position: fixed;
+    align-items: top;
+    text-align: center;
+    padding: 20px;
+    margin-left: 40%;
+    z-index: 100;
+    border-radius: 3%;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .cerrar {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+/* -- Responsividad --  */
+
+@media( max-width: 768px)  {
+    header{
+        background-color: #191A19;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        
+        
+    }
+
+    .alerta {
+        margin-left: 15%;
+      }
+
+    .app{
+        margin: 25px auto;
+        text-align: center;
+        
+    }
+
+    .textArea{
+        width: 200px;
+        height: 100px;
+        margin: 0px 0px 10px 90px;
+        font-size: 10px;
+        
+    }
+    .btn{
+
+        font-size: 7px;
+        padding:7px 7px;
+        margin: 0 10px 20px 10px;    
+    }
+    .areaResultado{
+
+        width: 280px;
+        height: 280px;
+        margin: 0 0 0 0;
+        padding: 7px 7px 7px 7px;
+        font-size: 7px;
+        border-radius: 5% 5% 5% 5%;
+        max-width: 280px;
+        max-height: 280px; 
+
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        background-color: #191A19;
+        width: 100%;
+        height: 280px;
+    }
+    img{
+        padding: 20px;
+        width: 40px;
+        height: 40px;
+        
+    }
+    .creditos{
+        font-size: 7px;
+        margin-top: 10px; 
+        margin-bottom: 40px;
+        
+    }
+  }

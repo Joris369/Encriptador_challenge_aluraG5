@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Style and script -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1 id="title">ENCRIPTADOR<span class="_">_</span></h1>
+    </header>
+    <div id="miAlerta" class="alerta">
+        <img class="img robot" src="imgs/ai.png" alt="robot">
+        <span class="cerrar" onclick="cerrarAlerta()">&times;</span>
+        <p>¡Texto Copiado!</p>
+    </div>
+
+    <div class="app">
+        <div class="Encriptador">
+
+            <form>
+                
+                <textarea class="textArea" name="" id="" cols="50" rows="30" title="" placeholder="ingrese su texto (los caracteres especiales se eliminan y los acentos se remueven) "></textarea>
+                <h6 class="instruccion">- no se admiten cáracteres especiales ni acentos</h6>
+                <button type="button" class=" btn botonEncriptar" onclick="Encriptacion(action=`encript`)">Encriptar</button>
+                <button type="button" class="btn botonDesencriptar" onclick="Desencriptacion(action=`decript`)">Desencriptar</button>
+                <button type="button"  class="btn borrador" onclick="Limpiar()">limpiar</button>
+                
+                
+                
+  
+    
+            </form>
+    
+        </div>
+        
+        <div class="areaResultado">
+            
+            <h2 id="hchange">Ningun mensaje fue encontrado</h2>
+            <img class="img robot" src="imgs/ai.png" alt="robot">
+            <p id="textchange">ingrese texto para encriptar o desencriptar</p>
+            <button class="btn copy" onclick="copyText()">Copiar</button>
+            
+        </div>
+
+
+    </div>
+
+
+
+    <footer>
+        <div class="contacto">
+            <h1>contacto</h1>
+            <a href="https://github.com/Joris369">
+                <img class="img github" src="imgs/github.png" alt="github">
+            </a>
+
+            <a href="https://www.linkedin.com/in/jorgeluishdzg36/">
+                <img class="img linkedin" src="imgs/linkedin.png" alt="linkedin">
+            </a>
+    
+        </div>
+
+
+
+
+        <div class="creditos">
+             <h1> Créditos </h1>
+            <a href="https://www.flaticon.com/free-icons/robot" title="robot icons">Robot icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
+        </div>
+        
+
+          
+       
+       
+    </footer>
+</body>
+</html>
